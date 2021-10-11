@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootswatch -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <title> tienda de vinilos</title>
+</head>
+<body style = "padding-right: 300px">
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-9 offset-md-3 card">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col"> id </th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Genero</th>
+                                <th scope="col">Autor</th>
+                                <th scope="col">Año</th>
+                                <th scope="col">Peso</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Stock</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                
+                            <tr class="table-info">
+                                <th scope="row"><%= data.id%></th>
+                                <td><%= data.nombre%></td>
+                                <td><%= data.genero%></td>
+                                <td><%= data.autor%></td>
+                                <td><%= data.año%></td>
+                                <td><%= data.peso%></td>
+                                <td><%= data.descripcion%></td>
+                                <td><%= data.stock%></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="text-align: center;">
+                        <a href="/" class="btn btn-success">Volver inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
